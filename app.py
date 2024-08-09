@@ -8,7 +8,7 @@ model = pickle.load(open('stored_model.pkl', 'rb'))
 
 @app.route('/')
 def hello_world():
-    return render_template('page.html')  # Ensure your template file is named 'index.html' or change the name accordingly
+    return render_template('index.html')  # Ensure your template file is named 'index.html' or change the name accordingly
 
 @app.route('/predict', methods=['POST', 'GET'])
 def predict():
